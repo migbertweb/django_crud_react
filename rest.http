@@ -1,0 +1,28 @@
+GET http://localhost:8000/task/api/v1/tasks/
+Content-Type: application/json
+
+GET http://localhost:8000/task/api/v1/tasks/4/
+Content-Type: application/json
+
+POST http://localhost:8000/task/api/v1/tasks/
+Content-Type: application/json
+
+{
+        "title": "esta es la 4ta tarea de pruebas",
+        "description": "esta es la cuarta tarea de pruebas",
+        "done": false
+}
+
+
+
+PUT http://localhost:8000/task/api/v1/tasks/4/
+Content-Type: application/json
+{
+        "title": "esta es la 4ta tarea de pruebas",
+        "description": "esta es la cuarta tarea de pruebas",
+        "done": true
+}
+
+
+
+DELETE http://localhost:8000/task/api/v1/tasks/3/
