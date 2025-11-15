@@ -1,3 +1,27 @@
+/**
+ * Archivo: TaskFormPage.jsx
+ * 
+ * Descripción: Componente de página que contiene el formulario para crear y editar tareas.
+ * Utiliza React Hook Form para manejar el estado del formulario y permite crear nuevas
+ * tareas o editar tareas existentes. También incluye la funcionalidad de eliminar tareas.
+ * 
+ * Autor: migbertweb
+ * 
+ * Fecha: 2024
+ * 
+ * Repositorio: https://github.com/migbertweb/django_crud_react
+ * 
+ * Licencia: MIT License
+ * 
+ * Uso: Página que se renderiza en las rutas /tasks-create (crear) y /tasks/:id (editar).
+ * Proporciona un formulario con campos para título, descripción y estado de completado.
+ * Cuando se edita una tarea existente, carga automáticamente los datos actuales.
+ * También incluye un botón para eliminar la tarea cuando se está en modo edición.
+ * Muestra notificaciones toast al crear, actualizar o eliminar tareas.
+ * 
+ * Nota: Este proyecto usa Licencia MIT. Se recomienda (no obliga) mantener 
+ * derivados como código libre, especialmente para fines educativos.
+ */
 import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
 import { createTask, deleteTask, getTask, updateTask } from "../api/tasks.api";

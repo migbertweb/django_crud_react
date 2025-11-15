@@ -1,3 +1,26 @@
+/**
+ * Archivo: TaskCard.jsx
+ * 
+ * Descripción: Componente que representa una tarjeta individual de tarea. Muestra
+ * el título, descripción y estado (completada/no completada) de una tarea.
+ * Permite hacer clic en la tarjeta para navegar a la página de edición.
+ * 
+ * Autor: migbertweb
+ * 
+ * Fecha: 2024
+ * 
+ * Repositorio: https://github.com/migbertweb/django_crud_react
+ * 
+ * Licencia: MIT License
+ * 
+ * Uso: Componente visual que representa una tarea en la lista de tareas. Recibe
+ * un objeto task como prop y muestra su información de forma atractiva. Al hacer
+ * clic en la tarjeta, navega a la página de edición de esa tarea específica.
+ * Muestra un badge visual indicando si la tarea está completada o no.
+ * 
+ * Nota: Este proyecto usa Licencia MIT. Se recomienda (no obliga) mantener 
+ * derivados como código libre, especialmente para fines educativos.
+ */
 import { useNavigate } from "react-router-dom";
 
 export function TaskCard({ task }) {
